@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BOJ_S2_잃어버린괄호 {
+public class BOJ_S2_1541_잃어버린괄호 {
 
 	public static void main(String[] args) {
 		Scanner scann = new Scanner(System.in);
