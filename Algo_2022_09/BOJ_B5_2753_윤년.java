@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class BOJ_B5_2753_윤년 {
+
+	public static void main(String[] args) {
+		Scanner scann = new Scanner(System.in);
+		
+		int year = scann.nextInt();
+		
+		if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+			System.out.println(1);
+		} else {
+			System.out.println(0);
+		}
+
+	}
+
+}
