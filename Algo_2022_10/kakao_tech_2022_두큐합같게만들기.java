@@ -18,6 +18,8 @@ class kakao_tech_2022_두큐합같게만들기 {
             q2[i] = queue2[i];
         }
         
+        if(sum1 == sum2) return 0;
+        
         long target = (sum1+sum2) / 2;
         
         while(cnt < length * 3) {
