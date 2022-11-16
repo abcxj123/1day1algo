@@ -4,15 +4,14 @@ import java.util.*;
 class pg_lv2_영어끝말잇기 {
     public int[] solution(int n, String[] words) {
         Set<String> set = new HashSet<>();
-        Stack<String> stack = new Stack<>();
         boolean flag = true;
         int idx = 1;
         int turn = 1;
+        String past = "";
         
         for(int i=0;i<words.length;i++) {
             String str = words[i];
             if(i != 0) {
-                String past = stack.peek();
                 char pastChar = past.charAt(past.length()-1);
                 char strChar = str.charAt(0);
                 if(pastChar != strChar) {
@@ -25,7 +24,7 @@ class pg_lv2_영어끝말잇기 {
                 break;
             } else {
                 set.add(str);
-                stack.push(str);
+                past = str;
             }
             idx++;
             if(idx > n) {
