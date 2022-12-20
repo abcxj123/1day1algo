@@ -1,0 +1,13 @@
+class pg_lv1_하샤드수 {
+    public boolean solution(int x) {
+        int sum = 0;
+        int num = x;
+        while(num>=10) {
+            sum += num % 10;
+            num /= 10;
+        }
+        sum += num;
+        if(x % sum == 0) return true;
+        else return false;
+    }
+}
