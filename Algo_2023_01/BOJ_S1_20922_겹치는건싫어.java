@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class BOJ_S1_20922_겹치는거싫어 {
+public class BOJ_S1_20922_겹치는건싫어 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
