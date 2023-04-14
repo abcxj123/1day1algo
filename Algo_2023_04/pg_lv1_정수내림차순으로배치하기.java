@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class 정pg_lv1_수내림차순으로배치하기 {
+class pg_lv1_정수내림차순으로배치하기 {
     public long solution(long n) {
         StringBuilder sb = new StringBuilder();
         String str = String.valueOf(n);
