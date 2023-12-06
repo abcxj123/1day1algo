@@ -17,8 +17,10 @@ public class BOJ_G5_7511_소셜네트워킹어플리케이션 {
 			
 			int N = Integer.parseInt(br.readLine());
 			int K = Integer.parseInt(br.readLine());
+			// 부모 노드를 저장하기 위한 배열
 			parent = new int[N];
 			
+			// 처음 자신의 부모는 자신이다.
 			for (int i = 0; i < N; i++) {
 				parent[i] = i;
 			}
@@ -28,6 +30,7 @@ public class BOJ_G5_7511_소셜네트워킹어플리케이션 {
 				int a = Integer.parseInt(st.nextToken());
 				int b = Integer.parseInt(st.nextToken());
 				
+				// a와 b를 연결하고 부모를 갱신해주는 작업을 해준다.
 				union(a, b);
 			}
 			
@@ -38,6 +41,7 @@ public class BOJ_G5_7511_소셜네트워킹어플리케이션 {
 				int a = Integer.parseInt(st.nextToken());
 				int b = Integer.parseInt(st.nextToken());
 				
+				// a의 부모와 b의 부모가 같다면 연결되어 있다.
 				if(find(a) == find(b)) {
 					sb.append(1+"\n");
 				} else {
