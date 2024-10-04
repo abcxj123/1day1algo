@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BOJ_B4_16017_Telemarketer {
+
+	public static void main(String[] args) {
+		Scanner scann = new Scanner(System.in);
+		
+		int one = scann.nextInt();
+		int two = scann.nextInt();
+		int three = scann.nextInt();
+		int four = scann.nextInt();
+		
+		if((one == 8 || one == 9) && (four == 8 || four == 9) && (two == three)) {
+			System.out.println("ignore");
+		} else {
+			System.out.println("answer");
+		}
+
+	}
+
+}
