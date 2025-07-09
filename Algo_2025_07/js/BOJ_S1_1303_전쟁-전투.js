@@ -15,6 +15,7 @@ class Queue {
 const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin").toString().split("\n");
 
+// M이 세로, N이 가로이므로 거꾸로 받음
 const [M, N] = input[0].trim().split(" ").map(Number);
 const dr = [-1, 0, 1, 0];
 const dc = [0, 1, 0, -1];
