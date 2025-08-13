@@ -15,11 +15,9 @@ function dfs(depth, num) {
     return;
   }
 
-  if (num % 2 === 0) {
-    dfs(depth + 1, num / 2);
-  }
-
   if (num % 10 === 1) {
     dfs(depth + 1, Math.floor(num / 10));
+  } else if (num % 2 === 0) {
+    dfs(depth + 1, num / 2);
   }
 }
