@@ -1,0 +1,34 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class BOJ_B3_2566_최댓값 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int max = -1;
+		int maxR = -1;
+		int maxC = -1;
+		
+		StringTokenizer st;
+		for (int i = 1; i <= 9; i++) {
+			st = new StringTokenizer(br.readLine());
+			for (int j = 1; j <= 9; j++) {
+				int n = Integer.parseInt(st.nextToken());
+				
+				if(n > max) {
+					max = n;
+					maxR = i;
+					maxC = j;
+				}
+			}
+		}
+		
+		System.out.println(max);
+		System.out.println(maxR+" "+maxC);
+		
+	}
+
+}
